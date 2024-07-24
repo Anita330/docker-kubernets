@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Downloads/compose-01-starting-setup"
+		},
+		{
+			"path": "../../kubernets_cerification"
+		},
+		{
+			"path": "../../Downloads/compose-02-finished"
+		}
+	],
+	"settings": {}
+}
