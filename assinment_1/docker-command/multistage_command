@@ -1,0 +1,18 @@
+#how to run multistage with different name docker file
+docker build -f frontend/docker.prod -t tag ./frontend
+
+Docker core consepts
+container
+1. isolated 
+2. single task focused 
+3. sharable and reproducable 
+4. stateless (+volume)
+
+
+
+Image 
+1.blueprint for container
+2.code + envirnoment 
+3. read only / does not run
+4. can be build + share 
+

@@ -1,0 +1,6 @@
+use bind mount to connect host machine folder
+-v /local/path:/container/path 
+
+use volume to persist data 
+-v NAME:/container/path 
+

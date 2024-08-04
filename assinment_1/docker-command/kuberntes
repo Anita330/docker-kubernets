@@ -1,0 +1,22 @@
+how to deploy image using imperative method
+kubectl create deployment abcd --image=image-path 
+
+to expose the deploymen we need to use the command 
+kubectl expose deployment --type=Loadbalancer --port=8080
+
+kubectl service service-name
+
+kubectl scale deploymet/nameofdeployment --replicas=3
+
+how to update the image 
+kubectl set image deployment/appname nameofapplication=dockerhubimage name
+
+how to rollout using command
+
+kubectl rollout status deployment/first-appname
+
+kubectl rollout undo deployment/first-appname
+
+
+imperative vs declarative 
+
