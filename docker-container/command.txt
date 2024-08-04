@@ -1,0 +1,19 @@
+Instead, use this approach / these commands:
+
+sudo yum update -y
+sudo yum -y install docker
+ 
+sudo service docker start
+ 
+sudo usermod -a -G docker ec2-user
+Make sure to log out + back in after running these commands.
+
+Once you logged back in, run this command:
+
+sudo systemctl enable docker
+Thereafter, you can check whether Docker is available by running:
+
+docker version
+
+https://stackoverflow.com/questions/53918841/how-to-install-docker-on-amazon-linux2/61708497#61708497
+
