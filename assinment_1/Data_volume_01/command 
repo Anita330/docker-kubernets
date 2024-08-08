@@ -1,0 +1,5 @@
+while bind mount we can use path 
+-v $(pwd):/app for local 
+bind mount volume command
+
+docker run -d -p 3000:80 -v feedback:/feedback/app -v "/home/einfochips/Docker-Complete/assinment_1/Data_volume_01:/app" -v /app/node_modules volume:1

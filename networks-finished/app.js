@@ -67,9 +67,25 @@ app.get('/people', async (req, res) => {
   }
 });
 
-// mongoose.connect(
-//   'mongodb://mongodb:27017/swfavorites',
-//   { useNewUrlParser: true , useUnifiedTopology: true },
+
+ 
+//const mongoose = require('mongoose');
+
+// const mongoURI = 'mongodb://hardcore_goldberg:27017/mydatabase';
+
+// mongoose.connect(mongoURI, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// }).then(() => {
+//   console.log('Successfully connected to MongoDB');
+// }).catch((err) => {
+//   console.error('Error connecting to MongoDB:', err);
+// });
+
+// const mongoURI = 'mongodb://hardcore_goldberg:27017/swfavorites';
+// mongoose.connect( mongoURI,
+//   { useNewUrlParser: true,
+//     useUnifiedTopology: true },
 //   (err) => {
 //     if (err) {
 //       console.log(err);
@@ -86,7 +102,7 @@ const { MongoClient } = require('mongodb'); // Ensure MongoClient is imported
 const port = 3000;
  
 // MongoDB URI (update with your actual URI)
-const uri = process.env.MONGO_URI || "mongodb://172.21.0.3:27017/swfavorites";
+const uri = process.env.MONGO_URI || "mongodb://172.21.0.2:27017/swfavorites";
  
 // Create a new MongoClient
 const client = new MongoClient(uri, { useUnifiedTopology: true });
@@ -98,7 +114,7 @@ client.connect(err => {
   }
   console.log("Connected to MongoDB");
   // Perform actions on the collection object here
- 
+  app.listen(3000);
   // Close the connection when done
   client.close();
 });
@@ -107,7 +123,6 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
  
-app.listen(port, () => {
-  console.log(`App running at http://localhost:${port}`);
-});
- 
+// app.listen(port, () => {
+//   console.log(`App running at http://localhost:${port}`);
+// });
