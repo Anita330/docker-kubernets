@@ -8,6 +8,18 @@
 		},
 		{
 			"path": "../../Downloads/Docker-kubernets-udmey/laravel-04-fixed"
+		},
+		{
+			"path": "../../Downloads/Docker-kubernets-udmey/deployment-06-switched-to-mongodb-atlas"
+		},
+		{
+			"path": "../../Downloads/Docker-kubernets-udmey/kub-action-02-declarative-approach-basics"
+		},
+		{
+			"path": "../../Downloads/kub-action-01-starting-setup"
+		},
+		{
+			"path": "../../Downloads/Docker-kubernets-udmey"
 		}
 	]
 }
